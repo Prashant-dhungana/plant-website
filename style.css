@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+
+}
+#main{
+    width: 100%;
+    height: 100%;
+    background-color: #dadada;
+    display: flex;
+    font-family: monospace;
+    }
+
+#left{
+    width: 80%;
+    height: 100%;
+   
+}
+#right{
+    width: 20%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+   
+}
+#left #top{
+    width: 100%;
+    height: 70%;
+    
+    background-image: url(https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=1373&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+   
+}
+#left #bottom{
+    width: 100%;
+    height: 30%;
+    background-color: #222;
+    color: white;
+    padding: 50px ;
+}
+#right #up{
+    width: 100%;
+    height: 70%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 70px;
+    position: relative;
+
+
+}
+#up a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 800;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: cursive;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+#up #selected{
+    margin-left: 20px;
+    position: relative;
+}
+#up #selected::before {
+    content: "";
+    width: 15px;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    left: -25px;
+    top: 9px;
+
+    
+}
+#right #down{
+    width: 100%;
+    height: 30%;
+    background-color: grey;
+}
+#lbtmcontent{
+    width: 100%;
+    /* height: 30px; */
+    
+    display: flex;
+    justify-content: space-between;
+}
+#lbtmleft{
+    width: 45%;
+    height: 100%;
+    /* background-color: yellow; */
+}
+#lbtmright{
+    width: 45%;
+    height: 100%;
+    /* background-color: rgb(56, 56, 2); */
+}
+
+
+#lbtmleft p{
+    width: 100%;
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+.row{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    padding-right: 80px;
+}
+.rowelem{
+    display: flex;
+}
+.rcnt {
+    margin-left: 10px;
+    
+}
+.rcnt p{
+    opacity: .5;
+}
+#icons{
+    position: absolute;
+    top: 0;
+    right: 5px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+#icons i{
+    font-size: 20px;
+}
+#btmflower{
+    width: 100px;
+    height: 120px;
+    /* background-image: url(https://images.unsplash.com/photo-1575120489936-189d626f2ffe?q=80&w=1370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); */
+    background-image: url(https://plus.unsplash.com/premium_photo-1677329952685-aecee218884a?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;    
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    /* border: 1px solid white; */
+    border-radius: 3px;
+    
+}
+
+#btmflower i{
+    font-size: 25px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 40px;
+    background-color: rgba(0, 0, 0, 0.363);
+    color: white;
+    height: 40px;
+    border-radius: 50%;
+    
+    
+}
+#arrow i{
+    position: absolute;
+    bottom: 0%;
+    right: 0;
+    font-size: 30px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+    background-color: rgba(0, 0, 0, 0.295);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#down{
+    background-image: url(https://images.unsplash.com/photo-1682687220975-7b2df674d3ce?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+#capsule{
+    background-color: #fff;
+    padding: 10px 20px;
+    width: 90%;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%,0);
+    border-radius: 10px;
+    
+}
+
+#capsule h2{
+    font-size: 10px;
+    margin-top: 10px;
+}
+#capsule p{
+    font-size: 8px;
+    width: 100%;
+    margin-top: 6px;
+    text-align: inherit;
+}
+.icon i{
+    color: rgb(105, 167, 105);
+}
